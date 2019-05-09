@@ -9,7 +9,8 @@ namespace MVCgame.Models
     {
         public int GenreID { get; set;}
         public string Name { get; set; }
-        public List<Game> Games { get; set; }
+
+        public virtual List<Game> Games { get; set; }
 
     }
 }

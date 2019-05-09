@@ -9,5 +9,7 @@ namespace MVCgame.Models
     {
         public int PlatformID { get; set;}
         public string System { get; set; }
+
+        public virtual List<Game> Games { get; set; }
     }
 }

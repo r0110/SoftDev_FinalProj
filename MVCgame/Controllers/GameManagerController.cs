@@ -4,17 +4,24 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVCgame.Models;
+using MVCgame.DAL;
 
 namespace MVCgame.Controllers
 {
     public class GameManagerController : Controller
     {
+        private GameContext db = new GameContext();
+
         // GET: GameManager - Like Gamestop
+        //public ActionResult Index()
+        //{
+        //    TempData tempData = new TempData();
+        //    var model = tempData.GetGames();
+        //    return View(model);
+        //}
         public ActionResult Index()
         {
-            TempData tempData = new TempData();
-            var model = tempData.GetGames();
-            return View(model);
+            return View(db.Games.ToList());
         }
 
         public ActionResult Detail(int id)

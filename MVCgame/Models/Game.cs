@@ -22,6 +22,7 @@ namespace MVCgame.Models
         public string Title { get; set; }
         public string ReleaseMonth { get; set; }
         public int ReleaseDate { get; set; }
+
         public virtual Genre Genre { get; set; }
         public virtual Platform Platforms { get; set;}
     }
