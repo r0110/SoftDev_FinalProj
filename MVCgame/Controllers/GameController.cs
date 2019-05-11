@@ -26,12 +26,12 @@ namespace MVCgame.Controllers
         //    var genreModel = data.GetGenres().Where(x => x.Name == genre).FirstOrDefault();
         //    genreModel.Games = data.GetGames().Where(g => g.Genre.Name == genre).ToList();
         //    return View(genreModel);
-           
-        //}
-        public ActionResult Browse(string genre)
-        {
 
-        }
+        //}
+        //public ActionResult Browse(string genre)
+        //{
+
+        //}
 
         //
         //GET: /Store/Details
